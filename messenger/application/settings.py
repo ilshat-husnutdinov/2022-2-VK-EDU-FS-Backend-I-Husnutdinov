@@ -121,7 +121,7 @@ USE_I18N = True
 USE_TZ = True
 
 # User
-AUTH_USER_MODEL = 'users.ChatUser'
+AUTH_USER_MODEL = 'users.AppUser'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/

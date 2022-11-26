@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 
-class ChatUser(AbstractUser):
+class AppUser(AbstractUser):
     GENDERS = (
         ('m','Мужчина'),
         ('f','Женщина'),
@@ -18,7 +18,7 @@ class ChatUser(AbstractUser):
             'first_name':self.first_name,
             'last_name':self.last_name,
             'is_active':self.is_active,
-            'gender':self.gender
+            'gender':self.gender,
         }
 
     class Meta:
@@ -26,5 +26,5 @@ class ChatUser(AbstractUser):
         verbose_name_plural = 'пользователи'
         ordering = ["id"]
 
-    objects = models.Manager()
+
 # Create your models here.
